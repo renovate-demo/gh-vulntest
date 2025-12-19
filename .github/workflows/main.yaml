@@ -1,10 +1,11 @@
 name: Run Python Tests
 
-on: ['workflow_dispatch']
+on:
+  workflow_dispatch:
 
 jobs:
   - name: SonarQube Scan
-    uses: sonarsource/sonarqube-scan-action@v4.0.0
+    uses: sonarsource/sonarqube-scan-action@v4.2.1
     env:
       SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONARQUBE_HOST_URL }}
