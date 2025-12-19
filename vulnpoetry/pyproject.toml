@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "vulnpoetry"
+version = "0.1.0"
+authors = [""]
+description = ""
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyter-core = "~4.9.1rc0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
